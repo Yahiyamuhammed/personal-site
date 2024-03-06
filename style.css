@@ -1,0 +1,67 @@
+body{
+    background-color: rgb(10,25,47)!important;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between!important;
+    padding: 0px 50px !important; /* Increased padding */
+    height: 100px;
+
+  }
+ .navbar-brand
+ {
+    color: #64ffda!important;
+ }
+  .navbar-nav .resume {
+    width: 80px;
+    border: 1px #64ffda solid;
+    border-radius: 4    px;
+    position: relative;
+
+    text-align: center;
+  }
+  
+  .navbar-nav .resume:hover {
+    top: -5px; /* Move up */
+    left: -5px; /* Move right */
+    box-shadow: 5px 5px 10px #64ffda; /* Shadow effect */
+    transition: top 0.3s ease-out, right 0.3s ease-out, box-shadow 0.3s ease-out; /* Transition effect */
+  }
+  
+  
+  .navbar-nav .number {
+    color: #64ffda; /* Green color for numbers */
+    margin-right: 5px; /* Add some space between number and text */
+  }
+ 
+  .navbar.navbar-light.bg-transparent {
+    background-color: rgba(10, 25, 47, 0.5) !important;
+    backdrop-filter: blur(10px) !important;
+  }
+  
+  .navbar ,
+  .navbar .navbar-nav .nav-link {
+    color: rgb(184,194,226) !important;
+  }
+  
+ .navbar-nav{
+    font-size: .9rem!important;
+    padding: 10px;
+    font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+ }
+ .navbar-nav .number {
+    padding: 0px; /* Add margin between number and text */
+}
+ .nav-item
+ {
+    padding: 10px;
+ }
+ .custom-toggler .navbar-toggler-icon {
+    background-color: transparent; /* Make the button background transparent */
+    border-color: #64ffda; /* Set the color of the lines */
+  }
+  
+  .custom-toggler .navbar-toggler-icon::before,
+  .custom-toggler .navbar-toggler-icon::after {
+    background-color: #64ffda; /* Set the color of the lines */
+  }

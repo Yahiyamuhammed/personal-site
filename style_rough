@@ -1,0 +1,58 @@
+.custom-collapse {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 70%; /* Adjust the width as needed */
+    max-width: 400px; /* Maximum width on larger screens */
+    height: 100vh; /* Cover the entire viewport */
+    background-color: #ffffff; 
+    /* background-color:#0a192f; */
+    z-index: 11; /* Ensure it's above other content */
+    transition: transform 0.3s ease-out; /* Smooth sliding animation */
+    transform: translateX(100%); /* Initially off-screen to the right */
+    
+    align-items: center;
+  }
+  
+  
+  .custom-collapse.show {
+    transform: translateX(0); /* Slide in from the right */
+  }
+
+
+
+  .custom-collapse {
+  
+    /* Adjust the width as needed */
+   max-width: 400px; /* Maximum width on larger screens */
+   
+   background-color: #ffffff; 
+   /* background-color:#0a192f; */
+   z-index: 11; /* Ensure it's above other content */
+   
+ 
+ }
+ .custom-collapse.collapsing {
+   height: 100vh; /* Adjust this value as needed */
+   display: flex;
+   justify-content: center;
+   position: fixed;
+   top: 0;
+   right: 0;
+   width: 70%;
+   transition: transform 0.3s ease-out; /* Smooth sliding animation */
+   transform: translateX(100%); /* Initially off-screen to the right */
+   
+   align-items: center;
+ }
+ 
+ 
+ 
+ .custom-collapse.show {
+   transform: translateX(0); /* Slide in from the right */
+ }
+   
+ 
+  

@@ -9,39 +9,71 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light p-1rem bg-transparent">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light p-1rem bg-transparent">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse custom-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav p-3  ">
+              <li class="nav-item lists" >
+                <a class="nav-link" href="#"><span class="number">01.</span><span>About</span></a>
+              </li>
+              <li class="nav-item lists">
+                <a class="nav-link" href="#"><span class="number">02.</span><span>Experience</span></a>
+              </li>
+              <li class="nav-item lists">
+                <a class="nav-link" href="#"><span class="number">03.</span><span>Work</span></a>
+              </li>
+              <li class="nav-item lists">
+                <a class="nav-link" href="#"><span class="number">04.</span><span>Contact</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link resume" href="#">Resume</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        
       
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav ml-auto p-3">
-            <li class="nav-item">
-              <a class="nav-link" href="#"><span class="number">01.</span>About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><span class="number">02.</span>Experience</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><span class="number">03.</span>Work</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><span class="number">04.</span>Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link resume" href="#">Resume</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      
-    
 
 
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+
+
+
+<!-- <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var dropdownMenu = document.getElementById('dropdownMenu');
+
+    dropdownMenu.addEventListener('show.bs.dropdown', function () {
+      this.style.maxHeight = '100vh';
+      this.style.overflowY = 'auto';
+    });
+
+    dropdownMenu.addEventListener('hidden.bs.dropdown', function () {
+      this.style.maxHeight = '';
+      this.style.overflowY = '';
+    });
+  });
+</script> -->
+<script>
+
+
+document.addEventListener('click', function(event) {
+  var clickover = event.target;
+  var _opened = document.querySelector(".navbar-collapse").classList.contains("show");
+  if (_opened === true && !clickover.classList.contains("navbar-toggler")) {
+    document.querySelector(".navbar-toggler").click();
+  }
+});
+
+
+</script>
 </body>
 </body>
 </html>

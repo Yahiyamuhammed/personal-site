@@ -4,13 +4,15 @@ body{
 .navbar {
     display: flex;
     justify-content: space-between!important;
+    flex-direction: row;
     padding: 0px 50px !important; /* Increased padding */
     height: 100px;
-
+    z-index: 10;
   }
  .navbar-brand
  {
     color: #64ffda!important;
+    z-index: 12;
  }
   .navbar-nav .resume {
     width: 80px;
@@ -56,12 +58,61 @@ body{
  {
     padding: 10px;
  }
- .custom-toggler .navbar-toggler-icon {
-    background-color: transparent; /* Make the button background transparent */
-    border-color: #64ffda; /* Set the color of the lines */
-  }
+ 
+
+.custom-toggler
+{
+  background-color: #64ffda!important;
+  z-index: 12;;
+  position: relative;
+  color: #ffffff!important;
+ 
+    border: none; /* Remove the border */
+    outline: none!important; /* Remove outline on click */
   
-  .custom-toggler .navbar-toggler-icon::before,
-  .custom-toggler .navbar-toggler-icon::after {
-    background-color: #64ffda; /* Set the color of the lines */
+}
+@media (min-width: 769px) {
+  .navbar-nav {
+    margin-left: auto; /* Apply ml-auto at larger screen sizes */
   }
+}
+
+@media (max-width: 768px) {
+  .navbar-collapse.custom-collapse {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 70vw; /* Adjust the width as needed */
+    max-width: 400px; /* Maximum width on larger screens */
+    height: 100vh; /* Cover the entire viewport */
+    background-color: #ffffff; 
+    z-index: 11; /* Ensure it's above other content */
+    transition: transform 0.1s ease-out; /* Smooth sliding animation */
+    transform: translateX(100%); /* Initially off-screen to the right */
+    align-items: center;
+  }
+
+  .navbar-collapse.custom-collapse.show {
+    transform: translateX(0); /* Slide in from the right */
+  }
+
+  
+  .navbar-nav .number {
+    margin-bottom: 0px; /* Add margin between number and text */
+}
+
+.navbar-nav .nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    margin-left: 1px!important;
+}
+
+
+.navbar-nav .nav-link span {
+    margin-bottom: 1px; /* Add margin between text and number */
+}
+
+}

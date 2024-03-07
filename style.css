@@ -143,3 +143,49 @@ body{
 /* Initially hide the navbar above the viewport */
 /*  */
 
+.side-social
+{
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  left: 40px;
+  right: auto;
+  
+}
+.social-list
+{
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+.social-icons
+{
+  stroke: #a8b2d1;
+  width: 20px;
+    height: 20px;
+
+}
+.social-item
+{
+  padding: 11.55px;
+}
+.para
+{
+  margin: 100px;
+}
+.side-social::after {
+  color: white;
+  content: "";
+  display: block;
+  width: 1px;
+  height: 90px; /* Adjust the height of the line as needed */
+  margin: 0 auto;
+  margin-top: 20px;
+  background-color: rgb(168,178,209); /* Adjust the color of the line as needed */
+   /* Adjust the position to center the line */
+}

@@ -1,15 +1,18 @@
 body{
     background-color: rgb(10,25,47)!important;
     z-index: 9;
+    padding-top: 100px;
 }
 .navbar {
-  position: fixed;
+  position: fixed!important;
+  width: 100%;
     display: flex;
     justify-content: space-between!important;
     flex-direction: row;
     padding: 0px 50px !important; /* Increased padding */
     height: 100px;
     z-index: 10;
+    transition: top 0.3s ease; /* Add smooth transition */
   }
  .navbar-brand
  {
@@ -93,7 +96,7 @@ body{
     width: 70vw; /* Adjust the width as needed */
     max-width: 400px; /* Maximum width on larger screens */
     height: 100vh; /* Cover the entire viewport */
-    background-color: #ffffff; 
+    background-color:rgb(17,34,64); 
     z-index: 11; /* Ensure it's above other content */
     transition: transform 0.1s ease-out; /* Smooth sliding animation */
     transform: translateX(100%); /* Initially off-screen to the right */
@@ -130,19 +133,13 @@ body{
 .navbar-collapse.custom-collapse {
     filter: none; /* Remove blur effect */
 }
-#overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
-  display: none;
-  z-index: 10; /* Below the navbar */
-}
+
 /* .hide-navbar {
   top: -100px;
   transition: top 0.3s;
 } */
 
 /* Initially hide the navbar */
+/* Initially hide the navbar above the viewport */
+/*  */
+

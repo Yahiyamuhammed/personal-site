@@ -36,7 +36,8 @@
           </div>
         </nav>
         
-      
+        <div id="overlay"></div>
+
 
 
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -68,11 +69,40 @@ document.addEventListener('click', function(event) {
   var clickover = event.target;
   var _opened = document.querySelector(".navbar-collapse").classList.contains("show");
   if (_opened === true && !clickover.classList.contains("navbar-toggler")) {
+    event.stopPropagation();
     document.querySelector(".navbar-toggler").click();
   }
 });
 
 
+// blur
+
+document.querySelector('.navbar-toggler').addEventListener('click', function() {
+  var elementsToBlur = document.querySelectorAll('body > *:not(nav):not(nav *)');
+  elementsToBlur.forEach(function(element) {
+    if (document.querySelector('.navbar-collapse').classList.contains('show')) {
+      element.classList.remove('blur-effect');
+    } else {
+      element.classList.add('blur-effect');
+    }
+  });
+});
+
+// nav hide 
+
+// var lastScrollTop = 0;
+// var navbar = document.querySelector('.navbar');
+
+// window.addEventListener('scroll', function() {
+//   var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+//   if (scrollTop > lastScrollTop) {
+//     navbar.classList.add('hide-navbar');
+//   } else {
+//     navbar.classList.remove('hide-navbar');
+//   }
+//   lastScrollTop = scrollTop;
+// });
+// 
 </script>
 </body>
 </body>

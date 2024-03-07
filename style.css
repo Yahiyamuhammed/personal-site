@@ -1,7 +1,9 @@
 body{
     background-color: rgb(10,25,47)!important;
+    z-index: 9;
 }
 .navbar {
+  position: fixed;
     display: flex;
     justify-content: space-between!important;
     flex-direction: row;
@@ -17,17 +19,20 @@ body{
   .navbar-nav .resume {
     width: 80px;
     border: 1px #64ffda solid;
-    border-radius: 4    px;
+    border-radius: 4px;
     position: relative;
-
+    transition: top 8s ease, left 8s ease, box-shadow 0s ease-out;
+    
     text-align: center;
+    
+    
   }
   
   .navbar-nav .resume:hover {
     top: -5px; /* Move up */
     left: -5px; /* Move right */
-    box-shadow: 5px 5px 10px #64ffda; /* Shadow effect */
-    transition: top 0.3s ease-out, right 0.3s ease-out, box-shadow 0.3s ease-out; /* Transition effect */
+    box-shadow: 3px 3px  #64ffda;
+   
   }
   
   
@@ -71,13 +76,14 @@ body{
     outline: none!important; /* Remove outline on click */
   
 }
-@media (min-width: 769px) {
+
+@media (min-width: 992px) {
   .navbar-nav {
     margin-left: auto; /* Apply ml-auto at larger screen sizes */
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .navbar-collapse.custom-collapse {
     display: flex;
     justify-content: center;
@@ -116,3 +122,27 @@ body{
 }
 
 }
+.blur-effect {
+  filter: blur(5px);
+  z-index: 10;
+}
+.navbar,
+.navbar-collapse.custom-collapse {
+    filter: none; /* Remove blur effect */
+}
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  display: none;
+  z-index: 10; /* Below the navbar */
+}
+/* .hide-navbar {
+  top: -100px;
+  transition: top 0.3s;
+} */
+
+/* Initially hide the navbar */

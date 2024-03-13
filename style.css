@@ -84,6 +84,16 @@ body{
   .navbar-nav {
     margin-left: auto; /* Apply ml-auto at larger screen sizes */
   }
+  .side-email::after
+  {
+    content: "";
+  }
+  .para
+{
+  margin: 100px;
+}
+
+  
 }
 
 @media (max-width: 991px) {
@@ -122,6 +132,15 @@ body{
 
 .navbar-nav .nav-link span {
     margin-bottom: 1px; /* Add margin between text and number */
+}
+
+.mail
+{
+  display: none;
+}
+.side-email::after
+{
+  display: none;
 }
 
 }
@@ -174,10 +193,6 @@ body{
 {
   padding: 11.55px;
 }
-.para
-{
-  margin: 100px;
-}
 .side-social::after {
   color: white;
   content: "";
@@ -208,6 +223,7 @@ body{
     color: #a8b2d1;;
     margin: 20px auto;
     padding: 10px;
+    padding-left: 12px;
     font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
     font-size: 12px;
     line-height: 18px;
@@ -220,8 +236,9 @@ body{
 .side-email::after
 {
   
-  content: "";
+ 
   display: block;
+
   width: 1px;
   height: 90px;
   margin: 0px auto;

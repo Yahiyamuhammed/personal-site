@@ -192,25 +192,34 @@ body{
   display: none;
 }
 .side-social {
-  margin-top: auto;
+  /* margin-top: auto; */
   padding: 10px;
-  height: 10px;
+  height: 100px;
+ 
 }
 
 .social-list {
   margin-bottom: 0px;
   display: flex;
   align-items: center;
+  justify-content: center;
   list-style: none;
   max-width:  270px;
   width: 100%;
+  padding: 0px;
 
 }
-.social-item
-{
+.social-item {
   padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
+.social-icons-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 }
 .blur-effect {
   filter: blur(5px);

@@ -1,7 +1,7 @@
 body{
     background-color: rgb(10,25,47)!important;
     z-index: 9;
-    padding-top: 100px;
+    /* padding-top: 100px; */
 }
 .navbar {
   position: fixed!important;
@@ -24,7 +24,9 @@ body{
     border: 1px #64ffda solid;
     border-radius: 4px;
     position: relative;
-    transition: top 8s ease, left 8s ease, box-shadow 0s ease-out;
+    transform: translateY(2px) translateX(2px); /* Move the element down and to the left initially */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Apply transition effect for opacity and transform */
+  
     
     text-align: center;
     
@@ -32,9 +34,10 @@ body{
   }
   
   .navbar-nav .resume:hover {
-    top: -5px; /* Move up */
-    left: -5px; /* Move right */
-    box-shadow: 3px 3px  #64ffda;
+    top: -3px; /* Move up */
+  left: -3px; /* Move right */
+  box-shadow: 3px 3px  #64ffda;
+  transform: translateY(0) translateX(0); /* Move the element back to its original position */
    
   }
   
@@ -287,4 +290,84 @@ body{
   font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
   text-align: center;
   padding: 10px;
+}
+.first
+{
+  display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 100vh;
+    height: 100vh;
+    padding: 0px 11.5vw;
+  
+
+}
+.my-name
+{
+  margin: 0px 0px 0px 4px;
+  color: #64ffda;
+  font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace; 
+  
+  
+
+}
+.my-name h1
+{
+  font-size: 17.5px;
+  font-weight: 400px;
+}
+.name h2
+{
+  margin: 0px 0px 10px;
+    font-weight: bold ;
+    color: #ccd5f6;
+    line-height: 1.1;
+    margin: 0px;
+    font-size: 67px;
+    padding-bottom: 10px;
+}
+
+.heading h3
+{
+  margin-top: 5px;
+    color: #8892B0;
+    line-height: 0.9;
+    font-size: 67px;
+    font-family: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system, system-ui, sans-serif;;
+    font-weight: bold;
+}
+.sentence
+{
+  margin: 20px 0px 0px;
+  max-width: 540px;
+  color: #8892B0;
+  font-size: 17px;
+}
+.resu
+{
+  color: #64ffda;
+  /* color: var(--green); */
+  background-color: transparent;
+  border: 1px solid #64ffda ;
+  border-radius: 6px;
+  padding: 1.25rem 1.75rem;
+  font-size:14px;
+  font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+  line-height: 1;
+  text-decoration: none;
+  transition: var(--transition);
+  margin-top: 50px;
+  transform: translateY(2px) translateX(2px); /* Move the element down and to the left initially */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Apply transition effect for opacity and transform */
+
+}
+.resu:hover {
+  top: -5px; /* Move up */
+  left: -5px; /* Move right */
+  box-shadow: 3px 3px  #64ffda;
+  transform: translateY(0) translateX(0); /* Move the element back to its original position */
+ 
 }

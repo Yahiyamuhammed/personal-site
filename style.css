@@ -1,3 +1,4 @@
+
 body{
     background-color: rgb(10,25,47)!important;
     z-index: 9;
@@ -217,6 +218,7 @@ body{
  
 }
 
+
 .social-list {
   margin-bottom: 0px;
   display: flex;
@@ -246,6 +248,37 @@ body{
 {
  
   width: 100vw;
+
+}
+
+.about p {
+ 
+  width: 100vw;
+  padding-right: 5vw;
+  line-height: 1.6;
+  color: #6c757d;
+  text-align: justify;
+}
+.image {
+  width: 100vw;
+  justify-content: center; /* Align horizontally center */
+}
+
+.col-lg-4 {
+  display: flex;
+  justify-content: center; /* Align column center */
+}
+
+@media (max-width: 991px) {
+  .about p
+{
+  padding-right:2vw;
+}
+.image
+{
+  padding-left: 50px;
+
+}
 
 }
 }
@@ -417,13 +450,13 @@ body{
 
 
 
-
 .about {
-  padding: 50px 0;
-  /* margin-left: 35px; */
-  padding: 0px 10vw;
-  /* background-color: #f8f9fa; */
+  padding: 0px 11.5vw;
+  width: 100%;
+  padding-bottom: 60px;
+  
 }
+
 .numbered-heading::before {
   position: relative;
   top: 4px;
@@ -436,55 +469,149 @@ body{
   font-weight: 400;
 }
 
-
 .numbered-heading {
   display: flex;
-  -webkit-box-align: center;
   align-items: center;
   position: relative;
   margin: 10px 0px 40px;
   width: 100%;
-  font-size: 28px!important;
+  font-size: 28px;
   font-weight: bold;
   white-space: nowrap;
   color: #ccd6f6;
-  font-family: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system, system-ui, sans-serif;;
+  font-family: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system, system-ui, sans-serif;
 }
-.about h2 {
-  /* color: #64ffda; */
-  font-size: 2.5em;
-  margin-bottom: 20px;
-  margin-bottom: 10px;
-  top: 5px;
-}
+
 .numbered-heading::after {
   color: #64ffda;
   content: "";
   display: block;
   position: relative;
   top: 3px;
-  width: 50vh;
+  width: 30vw;
   height: 1px;
   margin-left: 20px;
   background-color: #233554;
 }
+.inner
+{
+  width: 100%;
+}
 .about p {
-  font-size: 1.2em;
-  line-height: 1.6;
-  color: #6c757d;
+ 
+  margin: 0px 0px 15px;
+  font-size: 1em!important;
+  font-family: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system, system-ui, sans-serif;;
+  /* font-size: 1.2em; */
+  /* line-height: 1.6; */
+  color: #818ca9;
+  text-align: justify;
 }
 
 .about .skills-list {
   list-style-type: none;
-  padding: 0;
+  /* margin-left: 0px; */
 }
 
 .about .skills-list li {
-  font-size: 1.2em;
-  color: #6c757d;
+  font-size: 13px;
+  color:#818ca9;
+}
+.about .skills-list li::before {
+  content: "▹";
+  position: absolute;
+  padding-top: 3px;
+  left: 0px;
+  color: #64ffda;
+  font-size: var(--fz-sm);
+  line-height: 12px;
 }
 
 .about img {
+  width: auto; /* Adjusts the width of the image to fit its content */
   max-width: 100%;
   height: auto;
 }
+
+.image {
+  /* position: relative; */
+  max-width: 300px;
+  text-align: center;
+ 
+}
+
+
+.image-in {
+  box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
+  transition: var(--transition);
+  display: block;
+  position: relative;
+  width: 100%;
+  border-radius: var(--border-radius);
+  transition: all 0.3s ease; /* Add transition for smooth movement */
+}
+.image-in:hover {
+  transform: translate(-5px, -5px) ; /* Move to top left corner and scale */
+}
+
+.img-fluid {
+  position: relative;
+  border-radius: 4px;
+  /* filter: grayscale(100%); */
+  /* filter: hue-rotate(162deg) saturate(100%) brightness(100%); */
+  z-index: 1;
+
+}
+
+.image-in::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  border: 2px solid #64ffda;
+  top: 14px;
+  left: 14px;
+  z-index: -1;
+  transition: top 0.3s ease, left 0.3s ease; /* Add transition */
+}
+.image-in::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #64ffda; /* Your desired color */
+  opacity: 0.5; /* Adjust opacity as needed */
+  transition: opacity 0.3s ease; /* Add transition */
+  z-index: 2;
+}
+.image:hover .image-in::after {
+  top :22px;
+  left: 22px;
+  /* transform: translate(5px, 5px)  */
+}
+
+.image-in:hover::before {
+  opacity: 0; /* Hide the overlay on hover */
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  list-style: none;
+  padding-left: 2vw;
+}
+
+.skills-list .col-md-4 {
+  flex: 0 0 calc(33.33% - 20px); /* Adjust width as needed */
+  margin-bottom: 20px; /* Adjust spacing between rows as needed */
+}
+
+.skills-list li {
+  margin-bottom: 10px; /* Adjust spacing between list items as needed */
+}
+

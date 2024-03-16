@@ -57,3 +57,22 @@
  
   <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">…</svg>
 
+  .image-in::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: calc(100% - 28px); /* Adjust width */
+    height: calc(100% - 28px); /* Adjust height */
+    border-radius: 4px;
+    border: 2px solid #64ffda;
+    top: 14px; /* Initial position */
+    left: 14px; /* Initial position */
+    transition: top 0.3s ease, left 0.3s ease; /* Add transition */
+    z-index: -1;
+  }
+  
+  .image:hover .image-in::after {
+    top: 0; /* Move to bottom */
+    left: 0; /* Move to right */
+  }
+  

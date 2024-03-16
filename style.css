@@ -68,6 +68,7 @@ body{
  .nav-item
  {
     padding: 10px;
+    
  }
  
 
@@ -139,6 +140,15 @@ body{
   margin-top: 20px;
   background-color: rgb(168,178,209); /* Adjust the color of the line as needed */
    /* Adjust the position to center the line */
+   animation: slideIn 1s ease forwards;
+}
+@keyframes slideIn {
+  from {
+    margin-top: 100px; /* Start below the original position */
+  }
+  to {
+    margin-top: 20px; /* End at the desired margin-top value */
+  }
 }
 
 .designed
@@ -370,4 +380,22 @@ body{
   box-shadow: 3px 3px  #64ffda;
   transform: translateY(0) translateX(0); /* Move the element back to its original position */
  
+}
+.animated-element {
+  opacity: 0;
+  transform: translateY(  100%);
+  transition: all 0.5s ease-out;
+}
+.animated-element.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.animated-side-element {
+  opacity: 0;
+  transform: translateY(  100%);
+  transition: all 0.5s ease-out;
+}
+.animated-side-element.visible {
+  opacity: 1;
+  transform: translateY(0);
 }

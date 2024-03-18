@@ -1,78 +1,61 @@
-.custom-collapse {
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 70%; /* Adjust the width as needed */
-    max-width: 400px; /* Maximum width on larger screens */
-    height: 100vh; /* Cover the entire viewport */
-    background-color: #ffffff; 
-    /* background-color:#0a192f; */
-    z-index: 11; /* Ensure it's above other content */
-    transition: transform 0.3s ease-out; /* Smooth sliding animation */
-    transform: translateX(100%); /* Initially off-screen to the right */
-    
-    align-items: center;
-  }
-  
-  
-  .custom-collapse.show {
-    transform: translateX(0); /* Slide in from the right */
-  }
-
-
-
-  .custom-collapse {
-  
-    /* Adjust the width as needed */
-   max-width: 400px; /* Maximum width on larger screens */
-   
-   background-color: #ffffff; 
-   /* background-color:#0a192f; */
-   z-index: 11; /* Ensure it's above other content */
-   
- 
- }
- .custom-collapse.collapsing {
-   height: 100vh; /* Adjust this value as needed */
-   display: flex;
-   justify-content: center;
-   position: fixed;
-   top: 0;
-   right: 0;
-   width: 70%;
-   transition: transform 0.3s ease-out; /* Smooth sliding animation */
-   transform: translateX(100%); /* Initially off-screen to the right */
-   
-   align-items: center;
- }
- 
- 
- 
- .custom-collapse.show {
-   transform: translateX(0); /* Slide in from the right */
- }
-   
- 
-  <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">…</svg>
-
-  .image-in::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: calc(100% - 28px); /* Adjust width */
-    height: calc(100% - 28px); /* Adjust height */
-    border-radius: 4px;
-    border: 2px solid #64ffda;
-    top: 14px; /* Initial position */
-    left: 14px; /* Initial position */
-    transition: top 0.3s ease, left 0.3s ease; /* Add transition */
-    z-index: -1;
-  }
-  
-  .image:hover .image-in::after {
-    top: 0; /* Move to bottom */
-    left: 0; /* Move to right */
-  }
-  
+Project 2: Spotify Profile
+              <li class="featured__StyledProject-ywnbqt-1 gvznfB" data-sr-id="5">
+                  <div class="project-content">
+                      <div>
+                          <p class="project-overline">Featured Project</p>
+                          <h3 class="project-title"><a href="https://spotify-profile.herokuapp.com/" rel="noopener noreferrer" target="_blank">Spotify Profile</a></h3>
+                          <div class="project-description">
+                              <p>A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.</p>
+                          </div>
+                          <ul class="project-tech-list">
+                              <li>React</li>
+                              <li>Styled Components</li>
+                              <li>Express</li>
+                              <li>Spotify API</li>
+                              <li>Heroku</li>
+                          </ul>
+                          <div class="project-links">
+                              <a href="https://github.com/bchiang7/spotify-profile" aria-label="GitHub Link" rel="noopener noreferrer" target="_blank">
+                                  <!-- SVG for GitHub -->
+                              </a>
+                              <a href="https://spotify-profile.herokuapp.com/" aria-label="External Link" class="external" rel="noopener noreferrer" target="_blank">
+                                  <!-- SVG for External Link -->
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="project-image">
+                      <a href="https://spotify-profile.herokuapp.com/" rel="noopener noreferrer" target="_blank">
+                          <!-- Image and SVG for project image -->
+                      </a>
+                  </div>
+              </li>
+              <!-- Project 3: Build a Spotify Connected App -->
+              <li class="featured__StyledProject-ywnbqt-1 gvznfB" data-sr-id="6">
+                  <div class="project-content">
+                      <div>
+                          <p class="project-overline">Featured Project</p>
+                          <h3 class="project-title"><a href="https://www.newline.co/courses/build-a-spotify-connected-app" rel="noopener noreferrer" target="_blank">Build a Spotify Connected App</a></h3>
+                          <div class="project-description">
+                              <p>Having struggled with understanding how the Spotify OAuth flow works, I made the course I wish I could have had.</p>
+                              <p>Unlike tutorials that only cover a few concepts and leave you with half-baked GitHub repositories, this course covers everything from explaining the principles of REST APIs to implementing Spotify's OAuth flow and fetching API data in a React app. By the end of the course, you’ll have an app deployed to the internet you can add to your portfolio.</p>
+                          </div>
+                          <ul class="project-tech-list">
+                              <li>React</li>
+                              <li>Express</li>
+                              <li>Spotify API</li>
+                              <li>Styled Components</li>
+                          </ul>
+                          <div class="project-links">
+                              <a href="https://www.newline.co/courses/build-a-spotify-connected-app" aria-label="Course Link" class="cta" rel="noopener noreferrer" target="_blank">
+                                  Learn More
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="project-image">
+                      <a href="https://www.newline.co/courses/build-a-spotify-connected-app" rel="noopener noreferrer" target="_blank">
+                          <!-- Image and SVG for project image -->
+                      </a>
+                  </div>
+              </li>

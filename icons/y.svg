@@ -1,0 +1,22 @@
+<svg id="logo" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 84 96">
+  <title>Logo</title>
+  <style>
+    .text {
+      font-size: 600px!important; 
+    }
+  </style>
+  <polygon
+    id="Shape"
+    stroke="currentColor"
+    fill="#000000"
+    fill-opacity="0.0"
+    strokeWidth="5"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    points="39 0 0 22 0 67 39 90 78 68 78 23"
+  />
+  <!-- Increased font size to 60px -->
+  <text x="42" y="65" fill="#a8b2d1" fontSize="60px" fontFamily="Consolas" text-anchor="middle" >
+    Y <!-- Text content -->
+  </text>
+</svg>

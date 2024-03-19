@@ -3,6 +3,7 @@ body{
     background-color: rgb(10,25,47)!important;
     z-index: 9;
     /* padding-top: 100px; */
+    
 }
 .navbar {
   position: fixed!important;

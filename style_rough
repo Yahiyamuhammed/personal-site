@@ -1,3 +1,60 @@
+<section id="projects">
+          <h2 class="numbered-heading-projects" id="projects-head">Some Things I’ve Built</h2>
+          <ul class="projects-ul">
+              <!-- Project 1: Halcyon Theme -->
+              <li class="projects-li">
+                  <div class="project-container">
+                      <div class="project-image">
+                          <a href="https://halcyon-theme.netlify.com/" rel="noopener noreferrer" target="_blank">
+                              <img class="project-images" src="images/halcyon.png" alt="halycon">
+                          </a>
+                      </div>
+                      <div class="project-content">
+                          <p class="project-overline">Featured Project</p>
+                          <h3 class="project-title"><a href="" rel="noopener noreferrer" target="_blank">Halcyon Theme</a></h3>
+                          <div class="project-description">
+                              <p>A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on <a href="https://marketplace.visualstudio.com/items?itemName=brittanychiang.halcyon-vscode" target="_blank" rel="noopener noreferrer">Visual Studio Marketplace</a>, <a href="https://packagecontrol.io/packages/Halcyon%20Theme" target="_blank" rel="noopener noreferrer">Package Control</a>, <a href="https://atom.io/themes/halcyon-syntax" target="_blank" rel="noopener noreferrer">Atom Package Manager</a>, and <a href="https://www.npmjs.com/package/hyper-halcyon-theme" target="_blank" rel="noopener noreferrer">npm</a>.</p>
+                          </div>
+                          <div class="project-links">
+                              <a href="https://github.com/bchiang7/halcyon-site" aria-label="GitHub Link" rel="noopener noreferrer" target="_blank">
+                                  <img src="icons/github.svg" alt="">
+                              </a>
+                              <a href="https://halcyon-theme.netlify.com/" aria-label="External Link" class="external" rel="noopener noreferrer" target="_blank">
+                                  <img src="icons/external-link.svg" alt="">
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+              <!-- Project 2: Spotify Profile -->
+              <li class="projects-li">
+                  <div class="project-container">
+                      <div class="project-image">
+                          <a href="https://spotify-profile.herokuapp.com/" rel="noopener noreferrer" target="_blank">
+                              <img class="project-images" src="images/demo.png">
+                          </a>
+                      </div>
+                      <div class="project-content">
+                          <p class="project-overline">Featured Project</p>
+                          <h3 class="project-title"><a href="https://spotify-profile.herokuapp.com/" rel="noopener noreferrer" target="_blank">Spotify Profile</a></h3>
+                          <div class="project-description">
+                              <p>A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.</p>
+                          </div>
+                          <div class="project-links">
+                              <a href="https://github.com/bchiang7/spotify-profile" aria-label="GitHub Link" rel="noopener noreferrer" target="_blank">
+                                  <img src="icons/github.svg" alt="">
+                              </a>
+                              <a href="https://spotify-profile.herokuapp.com/" aria-label="External Link" class="external" rel="noopener noreferrer" target="_blank">
+                                  <img src="icons/external-link.svg" alt="">
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+          </ul>
+      </section>
+
+
 Project 2: Spotify Profile
               <li class="featured__StyledProject-ywnbqt-1 gvznfB" data-sr-id="5">
                   <div class="project-content">
@@ -59,3 +116,51 @@ Project 2: Spotify Profile
                       </a>
                   </div>
               </li>
+
+
+
+
+               <li class="projects-li">
+              <div class="project-content">
+                <p class="project-overline">Featured Project</p>
+                <h3 class="project-title">Halcyon Theme</h3>
+                <div class="project-description">
+                    <p>Minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.</p>
+                </div>
+                <div class="project-links">
+                    
+                        <img class="project-icons" src="icons/github.svg" alt="">
+                    
+                        <img class="project-icons" src="icons/external-link.svg" alt="">
+                    
+                </div>
+            </div>
+            <div class="project-images">
+              
+                  <img class="project-image" src="images/halcyon.png" alt="halycon">
+              
+          </div>
+            </li>
+
+
+            <li class="projects-li">
+              <div class="project-content">
+                <p class="project-overline">Featured Project</p>
+                <h3 class="project-title">Halcyon Theme</h3>
+                <div class="project-description">
+                    <p>Minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.</p>
+                </div>
+                <div class="project-links">
+                    
+                        <img class="project-icons" src="icons/github.svg" alt="">
+                    
+                        <img class="project-icons" src="icons/external-link.svg" alt="">
+                    
+                </div>
+            </div>
+            <div class="project-images">
+              
+                  <img class="project-image" src="images/halcyon.png" alt="halycon">
+              
+          </div>
+            </li>

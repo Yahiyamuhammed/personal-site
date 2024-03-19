@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YAHIYA MUHAMMED</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="projects-new.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- <link href="https://unpkg.com/feather-icons@4.29.0/dist/feather.min.css" rel="stylesheet"> -->
 </head>
 <body>
 
       <nav class="navbar navbar-expand-lg navbar-light bg-light p-1rem bg-transparent">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#"><Navbar></a>
           <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -102,51 +102,38 @@
           </div>
         </section>
          
-
+   
+        
         <section id="projects">
-          <h2 class="numbered-heading-projects" id="projects-head">Some Things I’ve Built</h2>
-          <ul class="projects-ul">
-              <!-- Project 1: Halcyon Theme -->
-              <li class="projects-li" >
-                <div class="project-container">
-                  <div class="project-image">
-                    <a href="https://halcyon-theme.netlify.com/" rel="noopener noreferrer" target="_blank">
-                        <!-- Image and SVG for project image -->
-                        <img class="project-images" src="images/halcyon.png" alt="halycon">
-                    </a>
+          <div class="container">
+            <h2 class="heading-projects">Some Things I’ve Built</h2>
+            <ul class="projects-ul">
+              <li class="projects-li pb-3 ">
+                <div class="row first-project">
+                  <div class=" col-lg-8 col-md-12  order-md-1 d-flex justify-content-center align-items-center ">
+                    <div class="project-images ">
+                      <img class="project-image " src="images/halcyon.png" alt="halycon">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-12 order-md-2 d-flex justify-content-center align-items-center text-right">
+                    <div class="project-content" >
+                      <p class="project-overline">Featured Project</p>
+                      <h3 class="project-title">Halcyon Theme</h3>
+                      <div class="project-description">
+                        <p>Minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.</p>
+                      </div>
+                      <div class="project-links">
+                        <img class="project-icons" src="icons/github.svg" alt="">
+                        <img class="project-icons" src="icons/external-link.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                  <div class="project-content">
-                      
-                          <p class="project-overline">Featured Project</p>
-                          <h3 class="project-title"><a href="" rel="noopener noreferrer" target="_blank">Halcyon Theme</a></h3>
-                          <div class="project-description">
-                              <p>A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on <a href="https://marketplace.visualstudio.com/items?itemName=brittanychiang.halcyon-vscode" target="_blank" rel="noopener noreferrer">Visual Studio Marketplace</a>, <a href="https://packagecontrol.io/packages/Halcyon%20Theme" target="_blank" rel="noopener noreferrer">Package Control</a>, <a href="https://atom.io/themes/halcyon-syntax" target="_blank" rel="noopener noreferrer">Atom Package Manager</a>, and <a href="https://www.npmjs.com/package/hyper-halcyon-theme" target="_blank" rel="noopener noreferrer">npm</a>.</p>
-                          </div>
-                          <!-- <ul class="project-tech-list">
-                              <li>VS Code</li>
-                              <li>Sublime Text</li>
-                              <li>Atom</li>
-                              <li>iTerm2</li>
-                              <li>Hyper</li>
-                          </ul> -->
-                          <div class="project-links">
-                              <a href="https://github.com/bchiang7/halcyon-site" aria-label="GitHub Link" rel="noopener noreferrer" target="_blank">
-                                  <!-- SVG for GitHub -->
-                                  <img src="icons/github.svg" alt="">
-                              </a>
-                              <a href="https://halcyon-theme.netlify.com/" aria-label="External Link" class="external" rel="noopener noreferrer" target="_blank">
-                                  <!-- SVG for External Link -->
-                                  <img src="icons/external-link.svg" alt="">
-                              </a>
-                          </div>
-                      
-                  </div>
-                  
-                  </div>
               </li>
-              
-          </ul>
-      </section>
+</ul>
+</div>
+</section>
+
       
 
         
@@ -255,6 +242,12 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 
 </script>
+<script>
+  window.addEventListener('load', function() {
+    window.scrollTo(0, 0);
+  });
+</script>
+
 <script>
  var lastScrollTop = 0;
 var navbar = document.querySelector('.navbar');

@@ -1,0 +1,22 @@
+#notworthy
+{
+    /* display: flex; */
+    /* align-items: center; */
+}
+.heads
+{
+    /* align-items: center; */
+    font-size: 32px;
+    margin: 0px 0px 10px;
+    font-weight: 600;
+    color: #ccd6f6;
+    line-height: 1.1;
+
+}
+.heads p
+{
+    font-size: 14px;
+    color: #64ffda;
+    font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+
+}

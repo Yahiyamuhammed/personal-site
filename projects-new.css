@@ -118,25 +118,21 @@
     z-index: 3;
 
   }
-  .project-image
-  {
-    height: 350px;
-    width: 600px;
-    object-fit: contain;
-    overflow: visible;
+  .project-image {
     position: relative;
-    z-index: 1;
+    width: 600px; /* Adjust width as needed */
+    height: 350px; /* Adjust height as needed */
   }
   .project-links img
 {
-    height: 50px;
+    height: 30px;
 }
 }
 .project-description
 {
     background-color: #112240;
 }
-.project-image::before {
+.project-images::before {
   content: "";
   position: absolute;
   top: 0;
@@ -148,7 +144,9 @@
   transition: opacity 0.3s ease; /* Add transition */
   z-index: 2;
 }
-
+.project-images:hover::before {
+  opacity: 0;
+}
 .project-overline
 {
     color: #64ffda;

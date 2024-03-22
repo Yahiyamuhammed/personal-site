@@ -1,4 +1,9 @@
-
+@media (max-width: 991px) {
+    #contact
+    {
+        margin-left: 20px !important;
+    }
+}
 
 #contact
 {

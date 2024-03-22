@@ -9,7 +9,7 @@
 @media (max-width: 991px) {
     .container-notworthy
 {
-    padding-left: 5px  !important;
+    padding-left: 20px  !important;
 
     padding-right:5px !important  ;
 }
@@ -100,7 +100,7 @@ font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
 
 
 }
-.equal-height-row {
+/* .equal-height-row {
     display: flex;
     flex-wrap: wrap;
    }
@@ -115,4 +115,4 @@ font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
    .equal-height-row .card {
     flex-grow: 1;
    }
-   
+    */

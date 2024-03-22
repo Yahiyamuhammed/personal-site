@@ -1,0 +1,77 @@
+
+
+#contact
+{
+   
+    max-width: 600px;
+    margin: 150px auto 100px;
+    text-align: center;
+    padding: 150px 0px;
+    height: 70vh;
+}
+.about-heading
+{
+    margin-bottom: 20px;
+    color: #64ffda;
+    font-family: monospace;
+    
+    font-size: 1.6em;
+    font-weight: 400;
+
+}
+.about-heading::before {
+    /* bottom: 0px; */
+    position: relative;
+    bottom: 0px;
+   
+    content: "04" ".";
+    margin-right: 10px;
+    color: #64ffda;
+    font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+    font-size:1em;
+    font-weight: 400;
+}
+.title
+{
+    font-size:3.5em ;
+    margin: 0px 0px 10px;
+    font-weight: 600;
+    color: #ccd6f6;
+    line-height: 1.1;
+
+}
+#contact p
+{
+    color: #8892b0;
+}
+.helo-about{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.hello-about
+{
+   
+  color: #64ffda;
+  /* color: var(--green); */
+  background-color: transparent;
+  border: 1px solid #64ffda ;
+  border-radius: 6px;
+  padding: 1.25rem 1.75rem;
+  font-size:14px;
+  font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+  line-height: 1;
+  text-decoration: none;
+  transition: var(--transition);
+  margin-top: 50px;
+  transform: translateY(2px) translateX(2px); /* Move the element down and to the left initially */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Apply transition effect for opacity and transform */
+  max-width: 150px;
+}
+.hello-about:hover {
+  top: -5px; /* Move up */
+  left: -5px; /* Move right */
+  box-shadow: 3px 3px  #64ffda;
+  transform: translateY(0) translateX(0); /* Move the element back to its original position */
+ 
+}

@@ -1,8 +1,37 @@
+@media (min-width: 992px) {
+    .container-notworthy
+{
+    padding-left: 80px  !important;
+
+    padding-right: 100px !important  ;
+}
+}
+@media (max-width: 991px) {
+    .container-notworthy
+{
+    padding-left: 5px  !important;
+
+    padding-right:5px !important  ;
+}
+
+}
+.heads
+{
+   padding-left: 6px;
+}
+.other-note
+{
+    display: flex;
+    /* text-align: center; */
+    justify-content: center;
+    font-size: .8em;
+}
 #notworthy
 {
     /* display: flex; */
     /* align-items: center; */
 }
+
 .heads
 {
     /* align-items: center; */
@@ -20,3 +49,70 @@
     font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
 
 }
+.card
+{
+    background-color: #112240 !important;
+    border-radius: 4px ;
+}
+.card-header
+{
+    color: #64ffda;
+    
+}
+.file
+{
+    width: 40px;
+    height: 40px;
+
+}
+.card-title
+{
+    color: #ccd6f6;
+    font-size:22px;
+    font-weight: 600;
+}
+.card-text
+{
+    color: #a8b2d1;
+    font-size: 17px;
+}
+.project-tech-list {
+    color: #ccd6f6;
+    display: flex;
+    /* align-items: flex; */
+    /* text-align: center; */
+    justify-content: center;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin: 20px 0px 20px;
+    list-style: none;
+    
+}
+.project-tech-list li:not(:last-of-type) {
+    margin-right: 15px;
+}
+.project-tech-list li{
+font-size: 12px;
+line-height: 1.75;
+font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+
+
+}
+.equal-height-row {
+    display: flex;
+    flex-wrap: wrap;
+   }
+   
+   .equal-height-row > .col-lg-4,
+   .equal-height-row > .col-md-6,
+   .equal-height-row > .col-12 {
+    display: flex;
+    flex-direction: column;
+   }
+   
+   .equal-height-row .card {
+    flex-grow: 1;
+   }
+   

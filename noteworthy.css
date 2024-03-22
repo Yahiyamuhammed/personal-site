@@ -19,6 +19,12 @@
 .heads
 {
    padding-left: 6px;
+   padding-top: 60px;
+   padding-bottom: 20px;
+}
+.heads p
+{
+    padding-top: 20px;
 }
 .other-note
 {

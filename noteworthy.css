@@ -15,6 +15,7 @@
 }
 
 }
+
 .heads
 {
    padding-left: 6px;
@@ -53,6 +54,7 @@
 {
     background-color: #112240 !important;
     border-radius: 4px ;
+    height: 300px;
 }
 .card-header
 {
